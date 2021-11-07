@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\othello\\othello.csproj": {}
+    "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\othello\\othello.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\ai\\ai.csproj": {
+    "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\ai\\ai.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\ai\\ai.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\ai\\ai.csproj",
         "projectName": "ai",
-        "projectPath": "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\ai\\ai.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\ai\\ai.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\ai\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\ai\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,17 +66,18 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\othello\\othello.csproj": {
+    "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\othello\\othello.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\othello\\othello.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\othello\\othello.csproj",
         "projectName": "othello",
-        "projectPath": "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\othello\\othello.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\othello\\othello.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\othello\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\othello\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,8 +95,8 @@
           "netcoreapp2.1": {
             "targetAlias": "netcoreapp2.1",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\ai\\ai.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\othello\\sdks\\cs\\ai\\ai.csproj"
+              "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\ai\\ai.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\AtomicAssessment\\AtomicAssessment\\cs\\ai\\ai.csproj"
               }
             }
           }
