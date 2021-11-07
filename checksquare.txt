@@ -1,0 +1,7 @@
+bool CheckSquare ( int row, int col, GameMessage message, int playernum)
+{
+    if (message.board[row-1][col-1] ! = 0 ||
+        message.board[row-1][col-1] ! = playernum)
+        return true;
+    else if ( )
+}

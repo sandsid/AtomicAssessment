@@ -1,0 +1,86 @@
+bool LegalMove(col, row, message, playernum)
+  var i = 0;
+  car j = 0;
+  
+  //check if spot is open
+  if(message.board[row][col] != 0)
+    return false;
+  
+  //---check horizontal and vertical----
+  
+  //check ->
+  for (i = col; i < 7; i ++)
+    if (message.board[row][i+1] == playernum)
+      return true;
+  
+  //check <-
+  for (i = col; i > 0; i--;)
+    if (message.board[row][i-1] == playernum)
+      reutn true;
+      
+  //check vertical down
+  for (i = row; i < 7; i++)
+    if (message.board[i+1][col] == playernum)
+      return true;
+  
+  //check vertical up^
+  for (i = row; i > 0; i--;
+    if ( message.board[i-1][col] == playernum)
+      return true; 
+  
+  
+  //---check Diagonals---
+  
+  //check diagonal left up
+  j=row;
+  for (i = col; i>0; i--)
+  {
+    if(message.board[j-1][i-1] == playernum)
+      return true;
+    j--;
+    if(j<=0)
+      break; (if break doesnt work make i = 0)
+  }
+  
+  //check diagonal left down
+  j = row; 
+  for(i = col; i > 0; i--;)
+  {
+    if(message.board[j+1][i-1] == playernum)
+      return true; 
+    j++;
+    if ( j >= 7 )
+      break;
+  }
+  
+  //check diagonal right up
+  j = row; 
+  for (i = col; i < 7; i ++)
+  {
+    if(message.board[j-1][i+1] == playernum)
+      return true;
+    j--;
+    if ( j <=0 )
+      break; 
+  }
+  
+  //check diagonal right down 
+  j = row;
+  for (i = col; i < 7; i++)
+  {
+    if(message.board[j+1][i+1] == playernum)
+      return true; 
+    j++;
+    if (j>=7)
+      break;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
