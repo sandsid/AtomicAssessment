@@ -42,6 +42,108 @@
         public static int [] CheckSquare(int row, int col, GameMessage message, int [] directions)
         {
             
+            
+            //corners
+            if (row == 0 && col == 0)
+            {
+                if (message.board[row][col + 1] == 1)
+                    directions[4] = 5;
+                if (message.board[row + 1][col] == 1)
+                    directions[6] = 7;
+                if (message.board[row + 1][col + 1] == 1)
+                    directions[7] = 8;
+                return directions;
+            }
+            if (row == 0 && col == 7)
+            {
+                if (message.board[row][col - 1] == 1)
+                    directions[3] = 4;
+                if (message.board[row + 1][col - 1] == 1)
+                    directions[5] = 6;
+                if (message.board[row + 1][col] == 1)
+                    directions[6] = 7;
+                return directions;
+            }
+            if (row == 7 && col == 0)
+            {
+                if (message.board[row - 1][col] == 1)
+                    directions[1] = 2;
+                if (message.board[row - 1][col + 1] == 1)
+                    directions[2] = 3;
+                if (message.board[row][col + 1] == 1)
+                    directions[4] = 5;
+                return directions;
+            }
+            if (row == 7 && col == 7)
+            {
+                if (message.board[row - 1][col - 1] == 1)
+                    directions[0] = 1;
+                if (message.board[row - 1][col] == 1)
+                    directions[1] = 2;
+                if (message.board[row][col - 1] == 1)
+                    directions[3] = 4;
+                return directions;
+            }
+
+            //boarder cells
+            if(row == 0)
+            {
+                if (message.board[row][col - 1] == 1)
+                    directions[3] = 4;
+                if (message.board[row][col + 1] == 1)
+                    directions[4] = 5;
+                if (message.board[row + 1][col - 1] == 1)
+                    directions[5] = 6;
+                if (message.board[row + 1][col] == 1)
+                    directions[6] = 7;
+                if (message.board[row + 1][col + 1] == 1)
+                    directions[7] = 8;
+                return directions;
+            }
+            if(col == 0)
+            {
+                if (message.board[row - 1][col] == 1)
+                    directions[1] = 2;
+                if (message.board[row - 1][col + 1] == 1)
+                    directions[2] = 3;
+                if (message.board[row][col + 1] == 1)
+                    directions[4] = 5;
+                if (message.board[row + 1][col] == 1)
+                    directions[6] = 7;
+                if (message.board[row + 1][col + 1] == 1)
+                    directions[7] = 8;
+                return directions;
+            }
+            if(row == 7)
+            {
+                if (message.board[row - 1][col - 1] == 1)
+                    directions[0] = 1;
+                if (message.board[row - 1][col] == 1)
+                    directions[1] = 2;
+                if (message.board[row - 1][col + 1] == 1)
+                    directions[2] = 3;
+                if (message.board[row][col - 1] == 1)
+                    directions[3] = 4;
+                if (message.board[row][col + 1] == 1)
+                    directions[4] = 5;
+                return directions;
+            }
+            if (col == 7)
+            {
+                if (message.board[row - 1][col - 1] == 1)
+                    directions[0] = 1;
+                if (message.board[row - 1][col] == 1)
+                    directions[1] = 2;
+                if (message.board[row][col - 1] == 1)
+                    directions[3] = 4;
+                if (message.board[row + 1][col - 1] == 1)
+                    directions[5] = 6;
+                if (message.board[row + 1][col] == 1)
+                    directions[6] = 7;
+                return directions;
+            }
+
+            //non-boarder cells
             if (message.board[row - 1][col - 1] == 1)
                 directions[0] = 1;
             if (message.board[row -1][col] == 1)
