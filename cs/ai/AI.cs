@@ -12,23 +12,23 @@
             var playable = false;
             //while the move hasnt been found look, unless you cant play(board is full)
             //check for the oposite players piece
-            for (int j = 0; j < 7; j++)
-                for (int i = 0; i < 7; i++)
-                    if (gameMessage.board[j][i] == 0)
+            for (int r = 0; r < 7; r++)
+                for (int c = 0; c < 7; c++)
+                    if (gameMessage.board[r][c] == 0)
                     {
-                        directions = CheckSquare(j, i, gameMessage, directions);
-                        foreach (int element in directions)
-                        {
 
+                        directions = CheckSquare(r, c, gameMessage, directions);
+                        for (int x =0; x<8; x++)
+                        {
                             //check if there is a legal/playable move
-                            if (element != 0)
-                                playable = LegalMove(j, i, gameMessage, element);
+                            if (directions[x] != 0)
+                                playable = LegalMove(r, c, gameMessage, directions[x]);
 
                             //assign the row and col to move, return 
                             if (playable)
                             {
-                                nextMove[0] = j;
-                                nextMove[1] = i;
+                                nextMove[0] = r;
+                                nextMove[1] = c;
                             }
                         }
                     }
@@ -38,10 +38,12 @@
 
 
         //check the square surrounding the spot on the board
-        //  return a list of the dirrections the leagal move needs to check 
+        //  return a list of the dirrections the legal move needs to check 
         public static int [] CheckSquare(int row, int col, GameMessage message, int [] directions)
         {
-            
+            //clear directions
+            for (int i = 0; i < 8; i++)
+                directions[i] = 0;
             
             //corners
             if (row == 0 && col == 0)
