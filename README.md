@@ -42,9 +42,8 @@ I expected this program to play the first move available when it traverses the p
 sign of a true legal play will send out the move and play in the simplest of ways.
 
 ## Outcome: 
-My program is not able to complete a full game. I have an issue with it not finding any moves from the 
-first 0..2 columns. In some games it breaks on the first move and others it will get in about 5..7 moves 
-and break due to an illegal move. 
+My program is not able to complete a full game.  In some games it breaks on the first move and others it 
+will get in about 5..7 moves and break due to an illegal move. 
 
 # Experience:
 
