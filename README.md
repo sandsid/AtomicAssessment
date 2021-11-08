@@ -21,16 +21,28 @@ INFO  othello.server.text-ui: Othello | Waiting for clients...
 INFO  othello.server.player.remote: Listening for player two on port 1338
 INFO  othello.server.text-ui: Player two | Connected...
 INFO  othello.server.text-ui: Othello | Running...
-INFO  othello.server.text-ui: Player one played: [3 5]
-INFO  othello.server.text-ui: Player two played: [4 5]
-INFO  othello.server.text-ui: Player one played: [5 3]
-INFO  othello.server.text-ui: Player two played: [4 2]
-INFO  othello.server.text-ui: Player one played: [5 5]
-INFO  othello.server.text-ui: Player two played: [6 4]
+INFO  othello.server.text-ui: Player one played: [2 4]
+INFO  othello.server.text-ui: Player two played: [2 3]
 INFO  othello.server.text-ui: Player one played: [5 2]
-INFO  othello.server.text-ui: Player two played: [6 2]
-INFO  othello.server.text-ui: Player one played: [7 1]
-INFO  othello.server.text-ui: Player two played: [6 1]
+INFO  othello.server.text-ui: Player two played: [1 5]
+INFO  othello.server.text-ui: Player one played: [3 2]
+INFO  othello.server.text-ui: Player two played: [4 1]
+INFO  othello.server.text-ui: Player one played: [1 3]
+INFO  othello.server.text-ui: Player two played: [0 2]
+INFO  othello.server.text-ui: Player one played: [2 5]
+INFO  othello.server.text-ui: Player two played: [1 4]
+INFO  othello.server.text-ui: Player one played: [0 3]
+INFO  othello.server.text-ui: Player two played: [0 4]
+INFO  othello.server.text-ui: Player one played: [2 1]
+INFO  othello.server.text-ui: Player two played: [0 5]
+INFO  othello.server.text-ui: Player one played: [0 6]
+INFO  othello.server.text-ui: Player two played: [1 0]
+INFO  othello.server.text-ui: Player one played: [1 2]
+INFO  othello.server.text-ui: Player two played: [1 1]
+INFO  othello.server.text-ui: Player one played: [3 0]
+INFO  othello.server.text-ui: Player two played: [1 6]
+INFO  othello.server.text-ui: Player one played: [3 1]
+INFO  othello.server.text-ui: Player two played: [2 6]
 INFO  othello.server.text-ui: Othello | Game over due to error...
 INFO  othello.server.text-ui: Othello | Disconnecting players...
 INFO  othello.server.text-ui: Player one | Disconnected...
