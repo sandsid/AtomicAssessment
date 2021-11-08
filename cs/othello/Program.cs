@@ -86,7 +86,7 @@ namespace othello
                         var nextMove = AI.NextMove(gameMessage);
                         
                         var serialized = JsonConvert.SerializeObject(nextMove);
-                        
+                        Console.WriteLine(serialized);
                         sw.WriteLine(serialized);
                         sw.Flush();
                     }

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0ce24b2c-701c-471a-9688-5c0e2b615af2": {
+      "ProjectGuid": "0ce24b2c-701c-471a-9688-5c0e2b615af2",
+      "DisplayName": "ai",
+      "ColorIndex": 0
+    },
+    "97babb56-aa52-4ecf-be49-979d460e68c0": {
+      "ProjectGuid": "97babb56-aa52-4ecf-be49-979d460e68c0",
+      "DisplayName": "othello",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

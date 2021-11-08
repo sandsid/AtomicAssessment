@@ -178,6 +178,7 @@
                     if (message.board[r - 1][c - 1] == 2)
                         return true;
                     r--;
+                    //keep inbound
                     if (r <= 0)
                         break; //(if break doesnt work make i = 0)
                 }
@@ -198,6 +199,7 @@
                     if (message.board[r - 1][c + 1] == 2)
                         return true;
                     r--;
+                    //keep inbound
                     if (r <= 0)
                         break;
                 }
@@ -224,6 +226,7 @@
                     if (message.board[r + 1][c - 1] == 2)
                         return true;
                     r++;
+                    //keep inbound
                     if (r >= 7)
                         break;
                 }
@@ -243,12 +246,13 @@
                     if (message.board[r + 1][c + 1] == 2)
                         return true;
                     r++;
+                    //keep inbound
                     if (r >= 7)
                         break;
                 }
             }
 
-
+            //return if all else fails
             return false;
         }
     }
