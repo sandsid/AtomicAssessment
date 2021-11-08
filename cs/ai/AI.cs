@@ -29,6 +29,7 @@
                             {
                                 nextMove[0] = r;
                                 nextMove[1] = c;
+                                return nextMove;
                             }
                         }
                     }
